@@ -1,0 +1,824 @@
+<!doctype html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>PIT | STOP Поділ — шиномонтаж без черг у Києві</title>
+		<meta
+			name="description"
+			content="Шиномонтаж на Подолі: сезонна заміна гуми, ремонт порізів, рихтування дисків, виїзний майстер. Запис на точну хвилину — без черг."
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+		<script src="./script.js" defer></script>
+	</head>
+	<body>
+		<header id="header" class="header">
+			<div class="container header__bar">
+				<a href="#top" class="logo">
+					<span class="logo__mark">PIT<span>|</span>STOP</span>
+					<span class="logo__sub">Поділ<br />шиномонтаж</span>
+				</a>
+
+				<nav class="nav">
+					<a href="#calculator" class="nav__link">Прайс і калькулятор</a>
+					<a href="#advantages" class="nav__link">Чому ми</a>
+					<a href="#contacts" class="nav__link">Контакти</a>
+					<a href="#faq" class="nav__link">Питання</a>
+				</nav>
+
+				<div class="header__actions">
+					<div class="header__contact">
+						<a href="tel:+380671234567" class="header__phone"
+							>+38 067 123 45 67</a
+						>
+						<span class="header__hours">Щодня 08:00–20:00</span>
+					</div>
+					<button class="btn btn-primary" data-scroll-to-form>
+						Записатися
+					</button>
+				</div>
+
+				<button id="menu-btn" class="menu-btn" aria-label="Відкрити меню">
+					<svg
+						id="icon-burger"
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke="currentColor"
+						stroke-width="2"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M4 6h16M4 12h16M4 18h16"
+						/>
+					</svg>
+					<svg
+						id="icon-close"
+						class="hidden"
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke="currentColor"
+						stroke-width="2"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M6 18L18 6M6 6l12 12"
+						/>
+					</svg>
+				</button>
+			</div>
+
+			<div id="mobile-menu" class="mobile-menu">
+				<div class="mobile-menu__inner">
+					<a href="#calculator" class="mobile-link">Прайс і калькулятор</a>
+					<a href="#advantages" class="mobile-link">Чому ми</a>
+					<a href="#contacts" class="mobile-link">Контакти</a>
+					<a href="#faq" class="mobile-link">Питання</a>
+					<div class="mobile-menu__footer">
+						<a href="tel:+380671234567" class="header__phone"
+							>+38 067 123 45 67</a
+						>
+						<span class="header__hours"
+							>Щодня 08:00–20:00 · Кирилівська, 15</span
+						>
+						<button class="btn btn-primary" data-scroll-to-form>
+							Записатися на бокс
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section id="top" class="hero">
+			<div class="hero__bg">
+				<img
+					src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?q=80&amp;w=1800&amp;auto=format&amp;fit=crop"
+					alt=""
+				/>
+				<div class="hero__gradient"></div>
+				<div class="hero__tread tread-bg"></div>
+			</div>
+
+			<svg
+				class="hero__rim spin-slow"
+				viewBox="0 0 200 200"
+				fill="none"
+				stroke="white"
+				stroke-width="1.5"
+			>
+				<circle cx="100" cy="100" r="95" />
+				<circle cx="100" cy="100" r="70" />
+				<circle cx="100" cy="100" r="18" />
+				<g stroke-width="2">
+					<line x1="100" y1="30" x2="100" y2="70" />
+					<line x1="100" y1="130" x2="100" y2="170" />
+					<line x1="30" y1="100" x2="70" y2="100" />
+					<line x1="130" y1="100" x2="170" y2="100" />
+					<line x1="49" y1="49" x2="76" y2="76" />
+					<line x1="124" y1="124" x2="151" y2="151" />
+					<line x1="151" y1="49" x2="124" y2="76" />
+					<line x1="76" y1="124" x2="49" y2="151" />
+				</g>
+			</svg>
+
+			<div class="container hero__grid">
+				<div class="reveal">
+					<div class="hero__badge">
+						<span class="hero__badge-dot"></span>
+						<span class="hero__badge-text"
+							>Поділ, Київ · вільні боксі сьогодні</span
+						>
+					</div>
+
+					<h1 class="hero__title">
+						Заїжджаєте на своїй хвилині.<br />
+						<span class="accent">Без черг</span>, як у боксах Формули-1.
+					</h1>
+
+					<p class="hero__lead">
+						Записуєтесь на точний час онлайн — приїжджаєте і одразу заїжджаєте
+						на підйомник. Німецьке обладнання Hunter та Continental 2025 року,
+						кава та Wi-Fi, поки ми працюємо з вашим авто.
+					</p>
+
+					<ul class="hero__list">
+						<li class="hero__list-item">
+							<span class="hero__check"
+								><svg
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+									stroke-width="3"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M5 13l4 4L19 7"
+									/>
+								</svg>
+							</span>
+							<span class="hero__list-text"
+								><strong>Запис на точну хвилину</strong> — жодних живих черг і
+								"приїжджайте, там подивимось"</span
+							>
+						</li>
+						<li class="hero__list-item">
+							<span class="hero__check"
+								><svg
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+									stroke-width="3"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M5 13l4 4L19 7"
+									/>
+								</svg>
+							</span>
+							<span class="hero__list-text"
+								><strong>Стенд Hunter 2025 року</strong> — балансування з
+								точністю до 1 грама</span
+							>
+						</li>
+						<li class="hero__list-item">
+							<span class="hero__check"
+								><svg
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+									stroke-width="3"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M5 13l4 4L19 7"
+									/>
+								</svg>
+							</span>
+							<span class="hero__list-text"
+								><strong>Мобільна бригада по Подолу</strong> — приїдемо, якщо
+								колесо пробите і їхати нікуди</span
+							>
+						</li>
+					</ul>
+
+					<div class="hero__actions">
+						<button class="btn btn-primary btn-primary--lg" data-scroll-to-form>
+							Записатись на бокс
+						</button>
+						<a href="tel:+380671234567" class="btn-ghost">
+							<svg
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M3 5a2 2 0 012-2h2.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+								/>
+							</svg>
+							+38 067 123 45 67
+						</a>
+					</div>
+				</div>
+
+				<div id="lead-form" class="reveal">
+					<form id="booking-form" class="form-card">
+						<div class="form-card__head">
+							<h2 class="form-card__title">Запис на бокс</h2>
+							<span class="form-card__timer">~ 45 сек</span>
+						</div>
+						<p class="form-card__note">
+							Передзвонимо протягом 10 хвилин і підберемо зручний час.
+						</p>
+
+						<div class="form-group">
+							<div>
+								<label for="f-name" class="form-label">Ім'я</label>
+								<input
+									id="f-name"
+									name="name"
+									type="text"
+									required
+									placeholder="Як до вас звертатись?"
+									class="form-control"
+								/>
+							</div>
+							<div>
+								<label for="f-phone" class="form-label">Телефон</label>
+								<input
+									id="f-phone"
+									name="phone"
+									type="tel"
+									required
+									placeholder="+38 0__ ___ __ __"
+									class="form-control"
+								/>
+							</div>
+							<div>
+								<label for="f-service" class="form-label">Послуга</label>
+								<select id="f-service" name="service" class="form-control">
+									<option>Сезонна заміна гуми</option>
+									<option>Ремонт порізу / проколу</option>
+									<option>Рихтування диска</option>
+									<option>Виїзний шиномонтаж</option>
+									<option>Ще не знаю, потрібна консультація</option>
+								</select>
+							</div>
+						</div>
+
+						<button
+							type="submit"
+							id="submit-btn"
+							class="btn btn-primary btn-primary--block"
+						>
+							Забронювати час
+						</button>
+						<p class="form-disclaimer">
+							Натискаючи кнопку, ви погоджуєтесь на обробку контактних даних.
+						</p>
+						<div id="form-success" class="form-success hidden">
+							Заявку прийнято! Ми зателефонуємо протягом 10 хвилин.
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<section id="calculator" class="section">
+			<div class="container">
+				<div class="section__head reveal">
+					<span class="section__eyebrow">Прайс і калькулятор</span>
+					<h2 class="section__title">
+						Ціна одразу на екрані — без "приїжджайте, порахуємо"
+					</h2>
+					<p class="section__lead">
+						Оберіть тип авто та радіус коліс — калькулятор одразу покаже
+						вартість сезонної заміни повного комплекту (демонтаж, монтаж,
+						балансування).
+					</p>
+				</div>
+
+				<div class="calc-layout">
+					<div class="card reveal">
+						<div class="calc-block">
+							<span class="calc-block__label">1. Тип автомобіля</span>
+							<div class="tab-group">
+								<input
+									type="radio"
+									name="car-type"
+									id="type-sedan"
+									value="1"
+									class="tab-input"
+									checked
+								/>
+								<label for="type-sedan" class="tab-label">Легкове авто</label>
+
+								<input
+									type="radio"
+									name="car-type"
+									id="type-suv"
+									value="1.3"
+									class="tab-input"
+								/>
+								<label for="type-suv" class="tab-label"
+									>Позашляховик / кросовер</label
+								>
+
+								<input
+									type="radio"
+									name="car-type"
+									id="type-van"
+									value="1.5"
+									class="tab-input"
+								/>
+								<label for="type-van" class="tab-label"
+									>Мікроавтобус / вантажний до 3.5т</label
+								>
+							</div>
+						</div>
+
+						<div class="calc-block">
+							<span class="calc-block__label">2. Радіус коліс</span>
+							<div id="radius-group" class="radius-grid"></div>
+						</div>
+
+						<div class="calc-result">
+							<div>
+								<span class="calc-result__label"
+									>Комплект: демонтаж + монтаж + балансування (4 колеса)</span
+								>
+								<div class="calc-result__value">
+									<span id="price-output" class="calc-result__number">800</span>
+									<span class="calc-result__unit">грн</span>
+								</div>
+							</div>
+							<button class="btn btn-primary" data-scroll-to-form>
+								Записатись за цією ціною
+							</button>
+						</div>
+						<p class="calc-note">
+							Ціна орієнтовна для стандартних сталевих дисків. Точну вартість
+							для литих дисків або run-flat шин уточнить майстер при записі.
+						</p>
+					</div>
+
+					<div class="reveal">
+						<div class="card">
+							<h3 class="price-list__title">Інші послуги</h3>
+							<ul class="price-list">
+								<li class="price-list__item">
+									<span class="price-list__name">Ремонт порізу / проколу</span
+									><span class="price-list__value">від 250 грн</span>
+								</li>
+								<li class="price-list__item">
+									<span class="price-list__name">Рихтування диска (1 шт.)</span
+									><span class="price-list__value">від 450 грн</span>
+								</li>
+								<li class="price-list__item">
+									<span class="price-list__name">Виїзний майстер по Подолу</span
+									><span class="price-list__value">від 350 грн</span>
+								</li>
+								<li class="price-list__item">
+									<span class="price-list__name">Балансування (1 колесо)</span
+									><span class="price-list__value">від 120 грн</span>
+								</li>
+								<li class="price-list__item">
+									<span class="price-list__name">Заміна вентиля</span
+									><span class="price-list__value">від 60 грн</span>
+								</li>
+							</ul>
+							<div class="price-cta">
+								<p>
+									Не знайшли своєї ситуації? Зателефонуйте — назвемо ціну за 2
+									хвилини.
+								</p>
+								<a href="tel:+380671234567">+38 067 123 45 67</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="advantages" class="section section--tint">
+			<div class="container">
+				<div class="section__head reveal">
+					<span class="section__eyebrow">Чому ми</span>
+					<h2 class="section__title">
+						Працюємо так, як хотіли б, щоб працювали з нашою машиною
+					</h2>
+				</div>
+
+				<div class="advantages-grid">
+					<div class="advantage-card reveal">
+						<div class="advantage-icon">
+							<svg
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+								/>
+							</svg>
+						</div>
+						<h3>Точний час</h3>
+						<p>
+							Онлайн-запис на конкретну хвилину. Приїхали — одразу на підйомник,
+							без очікування у дворі.
+						</p>
+					</div>
+
+					<div class="advantage-card reveal">
+						<div class="advantage-icon">
+							<svg
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z"
+								/>
+							</svg>
+						</div>
+						<h3>Точність балансування</h3>
+						<p>
+							Німецький стенд Hunter 2025 року — вимірює дисбаланс з точністю до
+							1 грама, авто не вібрує на трасі.
+						</p>
+					</div>
+
+					<div class="advantage-card reveal">
+						<div class="advantage-icon">
+							<svg
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+								/>
+							</svg>
+						</div>
+						<h3>Гарантія на роботи</h3>
+						<p>
+							6 місяців гарантії на монтаж і балансування. Якщо щось не так —
+							переробимо безкоштовно.
+						</p>
+					</div>
+
+					<div class="advantage-card reveal">
+						<div class="advantage-icon">
+							<svg
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+								/>
+							</svg>
+						</div>
+						<h3>Онлайн-черга</h3>
+						<p>
+							Бачите вільні боксі на добу вперед і самі обираєте зручний слот,
+							без дзвінків "а чи є місце".
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="contacts" class="section">
+			<div class="container">
+				<div class="section__head reveal">
+					<span class="section__eyebrow">Де ми</span>
+					<h2 class="section__title">
+						Заїзд з Кирилівської, п'ять хвилин від Контрактової
+					</h2>
+				</div>
+
+				<div class="contacts-layout">
+					<div class="map-box reveal">
+						<div class="map-box__grid"></div>
+						<div class="map-box__fade"></div>
+						<div class="map-pin">
+							<div class="map-pin__circle pulse">
+								<svg fill="currentColor" viewBox="0 0 24 24">
+									<path
+										d="M12 2C7.6 2 4 5.6 4 10c0 5.4 8 12 8 12s8-6.6 8-12c0-4.4-3.6-8-8-8zm0 11a3 3 0 110-6 3 3 0 010 6z"
+									/>
+								</svg>
+							</div>
+						</div>
+						<div class="map-box__card">
+							<div>
+								<strong>вул. Кирилівська, 15</strong>
+								<span>Подільський район, Київ</span>
+							</div>
+							<a
+								href="https://www.google.com/maps/search/?api=1&query=Київ+вул.+Кирилівська+15"
+								target="_blank"
+								rel="noopener"
+								class="map-box__link"
+								>Відкрити карту</a
+							>
+						</div>
+					</div>
+
+					<div class="contact-side reveal">
+						<div class="info-card">
+							<div class="info-card__icon">
+								<svg
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+									stroke-width="2"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+									/>
+								</svg>
+							</div>
+							<div>
+								<p class="info-card__label">Графік роботи</p>
+								<p class="info-card__value">Щодня, 08:00 – 20:00</p>
+							</div>
+						</div>
+
+						<a href="tel:+380671234567" class="call-card">
+							<div class="call-card__icon">
+								<svg
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+									stroke-width="2"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M3 5a2 2 0 012-2h2.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+									/>
+								</svg>
+							</div>
+							<div>
+								<p class="call-card__label">Подзвонити зараз</p>
+								<p class="call-card__value">+38 067 123 45 67</p>
+							</div>
+						</a>
+
+						<div class="social-grid">
+							<a href="viber://chat?number=%2B380671234567" class="social-btn">
+								<svg fill="currentColor" viewBox="0 0 24 24">
+									<path
+										d="M12 2C6.5 2 2 6 2 11c0 2.9 1.5 5.5 3.9 7.2-.1.9-.5 2.6-1.4 3.9 1.6-.2 3.4-1 4.6-1.8.9.2 1.9.3 2.9.3 5.5 0 10-4 10-9S17.5 2 12 2z"
+									/>
+								</svg>
+								<span>Viber</span>
+							</a>
+							<a
+								href="https://t.me/pitstoppodil"
+								target="_blank"
+								rel="noopener"
+								class="social-btn"
+							>
+								<svg fill="currentColor" viewBox="0 0 24 24">
+									<path
+										d="M21.5 3.5L2.7 10.9c-1.2.5-1.2 1.2-.2 1.5l4.8 1.5 1.8 5.6c.2.7.4 1 .9 1 .4 0 .6-.2.9-.5l2.1-2 4.4 3.2c.8.5 1.4.2 1.6-.7l3-14c.3-1.2-.4-1.7-1.5-1z"
+									/>
+								</svg>
+								<span>Telegram</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="faq" class="section section--tint">
+			<div class="container container--narrow">
+				<div class="section__head reveal">
+					<span class="section__eyebrow">Питання-відповіді</span>
+					<h2 class="section__title">Те, що зазвичай питають перед записом</h2>
+				</div>
+
+				<div class="faq-list">
+					<div class="faq-item reveal">
+						<button class="faq-toggle">
+							<span>Скільки триває сезонна заміна гуми?</span>
+							<svg
+								class="faq-icon"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M19 9l-7 7-7-7"
+								/>
+							</svg>
+						</button>
+						<div class="faq-body">
+							<p>
+								В середньому комплект з 4 коліс — 30-40 хвилин на легковому
+								авто, до 55 хвилин для позашляховика чи мікроавтобуса. Оскільки
+								ви записані на точний час, підйомник вже вільний до вашого
+								приїзду.
+							</p>
+						</div>
+					</div>
+
+					<div class="faq-item reveal">
+						<button class="faq-toggle">
+							<span>Чи обов'язково записуватись заздалегідь?</span>
+							<svg
+								class="faq-icon"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M19 9l-7 7-7-7"
+								/>
+							</svg>
+						</button>
+						<div class="faq-body">
+							<p>
+								Ні, у сезон запис дозволяє гарантовано потрапити на потрібний
+								час без очікування. Без запису теж приймаємо, якщо на момент
+								приїзду є вільний бокс — уточнюйте по телефону перед виїздом.
+							</p>
+						</div>
+					</div>
+
+					<div class="faq-item reveal">
+						<button class="faq-toggle">
+							<span>Диск погнутий і не тримає тиск — це можна виправити?</span>
+							<svg
+								class="faq-icon"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M19 9l-7 7-7-7"
+								/>
+							</svg>
+						</button>
+						<div class="faq-body">
+							<p>
+								У більшості випадків так — робимо холодне рихтування дисків з
+								алюмінію та сталі прямо на місці, без зняття шини, якщо
+								деформація не критична. Майстер оцінить диск візуально та на
+								стенді за 10 хвилин безкоштовно.
+							</p>
+						</div>
+					</div>
+
+					<div class="faq-item reveal">
+						<button class="faq-toggle">
+							<span>Як далеко їздить мобільний шиномонтаж?</span>
+							<svg
+								class="faq-icon"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M19 9l-7 7-7-7"
+								/>
+							</svg>
+						</button>
+						<div class="faq-body">
+							<p>
+								Виїжджаємо по всьому Подільському району та суміжних масивах
+								Києва. Виїзд у межах 5 км від точки на Кирилівській входить у
+								базову вартість 350 грн, далі — за домовленістю по телефону.
+							</p>
+						</div>
+					</div>
+
+					<div class="faq-item reveal">
+						<button class="faq-toggle">
+							<span>Яка гарантія на виконані роботи?</span>
+							<svg
+								class="faq-icon"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M19 9l-7 7-7-7"
+								/>
+							</svg>
+						</button>
+						<div class="faq-body">
+							<p>
+								6 місяців на монтаж, демонтаж і балансування коліс. Якщо після
+								нашої роботи з'явилась вібрація чи биття керма — переробимо
+								безкоштовно, без запитань.
+							</p>
+						</div>
+					</div>
+
+					<div class="faq-item reveal">
+						<button class="faq-toggle">
+							<span>Якими способами можна оплатити?</span>
+							<svg
+								class="faq-icon"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M19 9l-7 7-7-7"
+								/>
+							</svg>
+						</button>
+						<div class="faq-body">
+							<p>
+								Готівка, картка на терміналі та безготівковий розрахунок для
+								юридичних осіб. Для мобільного шиномонтажу майстер приймає
+								оплату карткою прямо на місці.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="cta-section">
+			<div class="cta-section__bg checker"></div>
+			<div class="container container--narrow reveal">
+				<h2 class="section__title">
+					Не стійте в черзі на шиномонтаж —<br />
+					займіть свій бокс наперед
+				</h2>
+				<p>
+					Запис займає менше хвилини. Передзвонимо і підтвердимо час протягом 10
+					хвилин.
+				</p>
+				<button class="btn btn-primary btn-primary--lg" data-scroll-to-form>
+					Записатись зараз
+				</button>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container footer__inner">
+				<div class="footer__logo">
+					<strong>PIT<span>|</span>STOP</strong>
+					<small>Поділ, Київ</small>
+				</div>
+				<p class="footer__meta">
+					вул. Кирилівська, 15 · +38 067 123 45 67 · Щодня 08:00–20:00
+				</p>
+				<p class="footer__copy">© <span id="year"></span> PIT|STOP Поділ</p>
+			</div>
+		</footer>
+	</body>
+</html>
